@@ -3,7 +3,7 @@ import ToggleThemeSwitcher from './ToggleThemeSwitcher';
 
 const TwoColumnLayout = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-slate-200 dark:bg-slate-600">
       {/* Primeira Coluna */}
       <div className="relative w-1/2">
         <img
