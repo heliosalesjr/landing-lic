@@ -27,17 +27,23 @@ const TwoColumnLayout = () => {
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 opacity-70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-sky-500 opacity-70"></div>
         
         {/* Novo conteúdo centralizado */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl md:text-8xl font-bold text-white amatic max-w-sm mx-auto">APRENDENDO A LIDAR COM DINHEIRO</h1>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center ">
+        <Image 
+            src="/6ocovers.png" 
+            alt="Aprendendo a lidar com dinheiro" 
+            width={500} 
+            height={500} 
+            className="w-64 sm:w-64 md:w-64 lg:w-80 xl:w-96"
+          />
           <p className="mt-4 text-lg text-white bg-purple-600 rounded-md p-2 px-4 font-bold">Material do 6o ano</p>
         </div>
       </div>
       {/* Segunda Coluna */}
       <div className="relative w-full md:w-1/2 flex items-center justify-center h-1/2 md:h-full">
-      <div className="hidden md:block absolute top-4 right-4">
+        <div className="hidden md:block absolute top-4 right-4">
           <ToggleThemeSwitcher />
         </div>
         <div className="px-4">
@@ -69,7 +75,7 @@ const TwoColumnLayout = () => {
                   12345678!
                 </span>
               </p>
-              <Button className="bg-sky-500 text-lg text-white font-bold m-4 hover:bg-emerald-500 px-4">
+              <Button className="bg-sky-500 text-lg text-white font-bold m-4 hover:bg-purple-600 px-4">
                 Acesse a Plataforma
               </Button>
             </CardBody>
@@ -81,6 +87,7 @@ const TwoColumnLayout = () => {
 };
 
 export default TwoColumnLayout;
+
 
 
 
