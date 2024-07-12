@@ -5,9 +5,9 @@ import './amatic.css';
 
 const TwoColumnLayout = () => {
   return (
-    <div className="flex h-screen bg-slate-200 dark:bg-slate-600">
+    <div className="flex flex-col md:flex-row h-screen bg-slate-200 dark:bg-slate-600">
       {/* Primeira Coluna */}
-      <div className="relative w-1/2">
+      <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
         <a
           href="http://www.beieducacao.com.br"
           target="_blank"
@@ -30,21 +30,21 @@ const TwoColumnLayout = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500 opacity-70"></div>
         
         {/* Novo conteúdo centralizado */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center ">
-          <h1 className="text-8xl font-bold text-white amatic max-w-sm mx-auto">APRENDENDO A LIDAR COM DINHEIRO</h1>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <h1 className="text-4xl md:text-8xl font-bold text-white amatic max-w-sm mx-auto">APRENDENDO A LIDAR COM DINHEIRO</h1>
           <p className="mt-4 text-lg text-white bg-purple-600 rounded-md p-2 px-4 font-bold">Material do 6o ano</p>
         </div>
       </div>
       {/* Segunda Coluna */}
-      <div className="w-1/2 flex items-center justify-center">
-        <div className="absolute top-4 right-4">
+      <div className="relative w-full md:w-1/2 flex items-center justify-center h-1/2 md:h-full">
+      <div className="hidden md:block absolute top-4 right-4">
           <ToggleThemeSwitcher />
         </div>
         <div className="px-4">
           <Card className="p-4">
             <CardBody className="text-center">
               <h1 className="text-2xl font-black px-8 mt-4">Seja bem-vindo</h1>
-              <p className="mt-4  px-8 mb-4">Aqui estão as informações para acessar a plataforma:</p>
+              <p className="mt-4 px-8 mb-4">Aqui estão as informações para acessar a plataforma:</p>
               <p className="font-bold mb-4 px-8">
                 Como Educador:<br />
                 <span className="bg-slate-200 rounded-md px-2 font-normal text-sm dark:text-black dark:bg-slate-300">
@@ -81,5 +81,6 @@ const TwoColumnLayout = () => {
 };
 
 export default TwoColumnLayout;
+
 
 
