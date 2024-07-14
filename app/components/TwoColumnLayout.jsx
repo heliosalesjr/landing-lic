@@ -78,6 +78,15 @@ const TwoColumnLayout = () => {
               <Button className="bg-sky-500 text-lg text-white font-bold m-4 hover:bg-purple-600 px-4">
                 Acesse a Plataforma
               </Button>
+                {/* Adicionando a imagem abaixo do botão */}
+                <div className="mt-4">
+                  <Image 
+                    src="/logo-white.png" // Atualize o caminho para o seu logo
+                    alt="Logo" 
+                    width={100} 
+                    height={100} 
+                  />
+                </div>
             </CardBody>
           </Card>
         </div>
