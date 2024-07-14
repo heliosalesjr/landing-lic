@@ -38,7 +38,7 @@ const TwoColumnLayout = () => {
             height={500} 
             className="w-64 sm:w-64 md:w-64 lg:w-80 xl:w-96"
           />
-          <p className="mt-4 text-lg text-white bg-purple-600 rounded-md p-2 px-4 font-bold">Material do 6o ano</p>
+          <p className="mt-4 text-3xl text-white rounded-md p-2 px-4 font-bold">Material do 6o ano</p>
         </div>
       </div>
       {/* Segunda Coluna */}
@@ -75,7 +75,7 @@ const TwoColumnLayout = () => {
                   12345678!
                 </span>
               </p>
-              <Button className="bg-sky-500 text-lg text-white font-bold m-4 hover:bg-purple-600 px-4">
+              <Button className="bg-purple-500 text-lg text-white font-bold m-4 hover:bg-sky-500 px-4">
                 Acesse a Plataforma
               </Button>
                 {/* Adicionando a imagem abaixo do botão */}
