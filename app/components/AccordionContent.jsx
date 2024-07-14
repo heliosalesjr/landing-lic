@@ -8,9 +8,9 @@ export default function Acc() {
   return (
     <div className='p-8 dark:bg-slate-700'>
         <div className='text-center max-w-5xl mx-auto py-8'>
-            <h1 className="text-4xl font-bold px-8 text-slate-800 dark:text-white">Acesso Rápido</h1>
+            <h1 className="text-4xl font-bold px-8 text-slate-800 dark:text-white">Usando a Plataforma</h1>
             <p className="mt-4 text-lg px-8 text-slate-800 dark:text-white">
-            Dentro da nossa plataforma, você encontrará todos os materiais de forma estruturada e organizada. No entanto, caso precise de algo específico imediatamente, basta clicar nos itens abaixo para acessar rapidamente o que procura.
+            Aprenda a usar nossa plataforma através dos conteúdos disponibilizados abaixo. Lembre-se que a plataforma possui ferramnentas específicas de acordo com cada perfil, sendo eles de estudante, educador ou gestor.
             </p>
         </div>
 
