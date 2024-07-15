@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div className="">
       <TwoColumnLayout  />
-      <Acc />
+      
       <Footer/>
     </div>
   );
