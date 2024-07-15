@@ -1,7 +1,6 @@
-import ToggleThemeSwitcher from './components/ToggleThemeSwitcher';
+
 import TwoColumnLayout from './components/TwoColumnLayout';
-import FullScreenIframe from './components/FullScreenIframe';
-import Acc from './components/AccordionContent';
+
 import Footer from './components/Footer';
 
 
