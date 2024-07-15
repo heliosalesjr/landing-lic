@@ -75,16 +75,17 @@ const TwoColumnLayout = () => {
                   12345678!
                 </span>
               </p>
-              <Button className="bg-purple-500 text-lg text-white font-bold m-4 hover:bg-sky-500 px-4">
+              <Button className="bg-purple-500 text-lg text-white font-bold m-4 hover:bg-sky-500 mx-8">
                 Acesse a Plataforma
               </Button>
                 {/* Adicionando a imagem abaixo do botão */}
                 <div className="mt-4">
                   <Image 
-                    src="/logo-white.png" // Atualize o caminho para o seu logo
+                    src="/pr-logo.png" // Atualize o caminho para o seu logo
                     alt="Logo" 
-                    width={100} 
+                    width={200} 
                     height={100} 
+                    className='mx-auto'
                   />
                 </div>
             </CardBody>
