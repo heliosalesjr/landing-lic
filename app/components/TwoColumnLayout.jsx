@@ -28,7 +28,7 @@ const TwoColumnLayout = () => {
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-sky-200 opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-sky-600 opacity-80"></div>
           
           {/* Novo conteúdo centralizado */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center py-16 md:py-0">
@@ -41,7 +41,7 @@ const TwoColumnLayout = () => {
             />
             <div className="mt-4">
               <Image 
-                src="/SEED.png"
+                src="/logo-pr-clara.png"
                 alt="Logo" 
                 width={200} 
                 height={100} 
