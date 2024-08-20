@@ -26,22 +26,22 @@ const TwoColumnLayout = () => {
           <img
             src="/teachs.jpg"
             alt="Background"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover hidden md:block"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-sky-600 opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-sky-200 opacity-80 hidden md:block"></div>
           
           {/* Novo conteúdo centralizado */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center py-16 md:py-0">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center py-16 md:py-0 ">
             <Image 
               src="/6ocovers.png" 
               alt="Aprendendo a lidar com dinheiro" 
               width={500} 
               height={500} 
-              className="w-64 sm:w-64 md:w-64 lg:w-80 xl:w-96"
+              className="w-64 sm:w-64 md:w-64 lg:w-80 xl:w-96 md:py-0 pt-64"
             />
             <div className="mt-4">
               <Image 
-                src="/logo-pr-clara.png"
+                src="/SEED.png"
                 alt="Logo" 
                 width={200} 
                 height={100} 
@@ -100,6 +100,7 @@ const TwoColumnLayout = () => {
 };
 
 export default TwoColumnLayout;
+
 
 
 
