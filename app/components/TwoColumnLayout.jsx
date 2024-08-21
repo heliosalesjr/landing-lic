@@ -56,9 +56,9 @@ const TwoColumnLayout = () => {
             <ToggleThemeSwitcher />
           </div>
           <div className="px-4 py-16 md:py-0">
-            <Card className="p-4">
+            <Card className="p-4 mx-4 mt-4">
               <CardBody className="text-center">
-                <h1 className="text-2xl font-black px-8 mt-4">Seja bem-vindo</h1>
+                <h1 className="text-2xl font-black px-8 mt-4 md:mt-0">Seja bem-vindo</h1>
                 <p className="mt-4 px-8 mb-4">Aqui estão as informações para acessar a plataforma:</p>
                 <p className="font-bold mb-4 px-8">
                   Como Educador:<br />
