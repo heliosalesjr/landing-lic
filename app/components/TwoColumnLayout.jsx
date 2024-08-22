@@ -8,7 +8,7 @@ const TwoColumnLayout = () => {
     <>
       <div className="flex flex-col md:flex-row min-h-screen dark:bg-slate-600">
         {/* Primeira Coluna */}
-        <div className="relative w-full md:w-1/2 flex items-center justify-center min-h-[60vh] py-8">
+        <div className="relative w-full md:w-1/2 flex items-center justify-center min-h-[60vh] md:py-8">
           <a
             href="http://www.beieducacao.com.br"
             target="_blank"
@@ -56,7 +56,7 @@ const TwoColumnLayout = () => {
             <ToggleThemeSwitcher />
           </div>
           <div className="px-4 py-16 md:py-0">
-            <Card className="p-4 mx-4 mt-4 sm:p-16 bg-slate-200 dark:bg-slate-800">
+            <Card className="m-16 mx-4 mt-4 md:m-4 md:p-8 ml-8 md:ml-0 bg-slate-200 dark:bg-slate-800">
               <CardBody className="text-center">
                 <h1 className="text-2xl font-black px-8 mt-4 md:mt-0">Seja bem-vindo</h1>
                 <p className="mt-4 px-8 mb-4">Aqui estão as informações para acessar a plataforma:</p>
