@@ -6,7 +6,7 @@ export default function Acc() {
   
 
   return (
-    <div className='p-8 dark:bg-slate-700'>
+    <div className='p-8 dark:bg-slate-700 '>
         <div className='text-center max-w-5xl mx-auto py-8 '>
             <h1 className="text-4xl font-bold px-8 text-slate-800 dark:text-white">Usando a Plataforma</h1>
             <p className="mt-4 text-lg px-8 text-slate-800 dark:text-white">
