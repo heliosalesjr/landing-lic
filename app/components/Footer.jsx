@@ -3,7 +3,7 @@ import Image from 'next/image';
 function Footer() {
   return (
     <>
-      <footer className="footer p-10 bg-secondary flex justify-between">
+      <footer className="footer p-10 bg-sky-600 flex justify-between">
         <aside>
           <div className="flex-1">
             <a href="http://www.beieducacao.com.br" target="_blank" rel="noopener noreferrer">
