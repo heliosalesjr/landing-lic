@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ToggleThemeSwitcher from './ToggleThemeSwitcher';
 import { Button, Card, CardBody } from '@nextui-org/react';
 import Acc from './AccordionContent';
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const TwoColumnLayout = () => {
   return (
@@ -86,6 +87,7 @@ const TwoColumnLayout = () => {
                 </p>
                 <Button className="bg-purple-500 text-lg text-white font-bold m-4 hover:bg-sky-500 mx-8">
                   Acesse a Plataforma
+                  <FaArrowUpRightFromSquare className="inline ml-2" />
                 </Button>
               </CardBody>
             </Card>
