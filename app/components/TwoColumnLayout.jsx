@@ -1,29 +1,48 @@
+"use client";
 import Image from 'next/image';
-import ToggleThemeSwitcher from './ToggleThemeSwitcher';
+import { useState, useEffect } from "react";
 import { Button, Card, CardBody } from '@nextui-org/react';
 import Acc from './AccordionContent';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const TwoColumnLayout = () => {
+  const [logoSrc, setLogoSrc] = useState("/logo-white.png");
+
+  useEffect(() => {
+    const updateLogo = () => {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        setLogoSrc("/logo-blue.png");
+      } else {
+        setLogoSrc("/logo-white.png");
+      }
+    };
+
+    updateLogo(); // Atualiza na inicialização
+
+    window.addEventListener("resize", updateLogo);
+
+    return () => window.removeEventListener("resize", updateLogo); // Limpeza
+  }, []);
+
   return (
     <>
       <div className="flex flex-col md:flex-row min-h-screen dark:bg-slate-600 bg-slate-200">
         {/* Primeira Coluna */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center min-h-[60vh] md:py-8">
-          <a
-            href="http://www.beieducacao.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-4 left-4 z-10"
-          >
-            <Image
-              src="/logo-white.png" // Caminho relativo à pasta 'public'
-              alt="Logo BEĨ"
-              width={70} // Largura desejada
-              height={70}
-              className="mx-8"
-            />
-          </a>
+        <a
+          href="http://www.beieducacao.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-4 left-4 z-10"
+        >
+          <Image
+            src={logoSrc}
+            alt="Logo BEĨ"
+            width={70}
+            height={70}
+            className="mx-8"
+          />
+        </a>
           <img
             src="/teachs.jpg"
             alt="Background"
@@ -53,9 +72,7 @@ const TwoColumnLayout = () => {
         </div>
         {/* Segunda Coluna */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center min-h-[60vh] py-8">
-          <div className="hidden md:block absolute top-4 right-4">
-            <ToggleThemeSwitcher />
-          </div>
+          
           <div className="px-4 py-16 md:py-0">
             <Card className="m-8 mt-4 md:m-4 md:p-8 mx-10 md:mx-0 bg-white dark:bg-slate-800">
               <CardBody className="text-center">
