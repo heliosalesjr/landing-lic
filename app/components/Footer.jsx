@@ -15,7 +15,7 @@ function Footer() {
               />
             </a>
             <p className="py-4 text-white">
-              <strong>Conteúdo com propósito</strong><br /><span className='text-sm py-4'>2024 © Todos os direitos reservados</span>
+              <strong>Conteúdo com propósito</strong><br />
             </p>
           </div>
         </aside>
@@ -59,8 +59,11 @@ function Footer() {
               </a>
             </div>
           </nav>
+          
         </div>
+        
       </footer>
+      <p><span className='flex text-sm py-4 align-middle justify-center bg-sky-600  text-blue-50'>2024 © Todos os direitos reservados</span></p>
     </>
   );
 }
